@@ -1,0 +1,3 @@
+supervisord::
+  lookup:
+    master: supervisord-master
