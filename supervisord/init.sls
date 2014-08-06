@@ -1,11 +1,8 @@
 
-{% from "template/map.jinja" import template with context %}
+{% from "supervisord/map.jinja" import supervisord with context %}
 
-template:
-  pkg:
-    - installed
-    - name: {{ template.pkg }}
-  service:
-    - running
-    - name: {{ template.service }}
-    - enable: True
+supervisord:
+  pip.installed:
+    - name: {{ supervisord.pkg }}
+  #pkg.installed:
+  # - name: {{ supervisord.pkg }}

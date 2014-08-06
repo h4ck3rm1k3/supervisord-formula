@@ -1,3 +1,1 @@
-supervisord::
-  lookup:
-    master: supervisord-master
+supervisord:

@@ -21,5 +21,9 @@ Available states
 ``supervisord``
 -------------------------------------
 
-Installs the supervisord package,
-and starts the associated supervisord service.
+Installs the supervisord package with pip.
+
+``supervisord.system``
+-------------------------------------
+Installs the supervisord package with pip,
+and configures a system instance (default: ``/etc/supervisord.conf``).
